@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Downloader</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-center bg-white shadow-sm py-4">
+      <h1 class="fw-bold">IG Post & Reels Downloader</h1>
+      <p class="text-muted">
+        Extension for downloading Instagram posts and reels with one click
+      </p>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero text-center">
+      <div class="container">
+        <img
+          src="https://picsum.photos/200/200"
+          class="img-fluid rounded mb-4"
+          alt="Extension Preview"
+        />
+        <h2 class="fw-bold mb-3">Download IG Content Easily!</h2>
+        <p class="lead text-muted mb-4">
+          Save your favorite Instagram reels and posts directly from your
+          browser. Fast, safe, and 100% free!
+        </p>
+
+        <button id="downloadBtn" class="btn btn-primary btn-download">
+          📦 Download Extension (.zip)
+        </button>
+
+        <div class="progress mx-auto mt-3" style="width: 300px">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 0%"
+            id="downloadProgress"
+          ></div>
+        </div>
+
+        <div class="mt-3">
+          <a href="#" class="installGuide" data-bs-toggle="modal" data-bs-target="#installModal"
+            >🛠 Installation Guide</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-4">Features</h3>
+        <div class="row text-start features">
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-download"></i><strong> Fast Downloads</strong> – Get
+            posts and reels in seconds.
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-shield-lock"></i><strong> Safe & Private</strong> –
+            No data tracking, no login required.
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="bi bi-puzzle"></i><strong> Easy Install</strong> – Just
+            unzip and load into your browser.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <!-- <section class="py-5 bg-light" id="feedback">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-4">Send Us Feedback</h3>
+        <form class="mx-auto" style="max-width: 600px">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email (optional)</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="your@email.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Feedback</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Tell us what you think..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-muted">
+      &copy; 2025 IG Downloader Extension. All rights reserved.
+    </footer>
+
+    <!-- Modal: Install Guide -->
+    <div
+      class="modal fade"
+      id="installModal"
+      tabindex="-1"
+      aria-labelledby="installModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="installModalLabel">
+              🛠 Extension Installation Guide
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <ol>
+              <li>Download the <code>.zip</code> file using the button above.</li>
+              <li>Extract the contents to a local folder on your computer.</li>
+              <li>Open your Chrome Browser</li>
+              <li>
+                Go to <code>chrome://extensions</code>
+              </li>
+              <li>Enable <strong>Developer Mode</strong> in the top right corner.</li>
+              <li>
+                Click <strong>"Load unpacked"</strong> and select the extracted folder.
+              </li>
+              <li>The extension is now installed and ready to use!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
