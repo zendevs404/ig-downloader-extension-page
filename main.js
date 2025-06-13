@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
     if (progress >= 100) {
       clearInterval(interval);
       setTimeout(() => {
-        window.location.href = "zip-files/CH34x_Install_Windows_v3_4.zip";
+        window.location.href = "zip-files/sosmed-downloader-0.0.0-chrome.zip";
         progressContainer.style.display = "none";
         progressBar.style.width = "0%";
       }, 500);
